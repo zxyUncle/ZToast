@@ -7,17 +7,17 @@ public enum Prompt {
     /**
      * 红色,错误
      */
-    ERROR(R.drawable.common_bounced_icon_error, R.color.prompt_error),
+    ERROR(R.drawable.common_bounced_icon_error, 0xffff0000),
 
     /**
-     * 红色,警告
+     * 蓝色,警告
      */
-    WARNING(R.drawable.common_bounced_icon_warning, R.color.prompt_warning),
+    WARNING(R.drawable.common_bounced_icon_warning, 0xff00574B),
 
     /**
      * 绿色,成功
      */
-    SUCCESS(R.drawable.common_bounced_icon_successful, R.color.prompt_success);
+    SUCCESS(R.drawable.common_bounced_icon_successful, 0xff000000);
 
     private int resIcon;
     private int backgroundColor;

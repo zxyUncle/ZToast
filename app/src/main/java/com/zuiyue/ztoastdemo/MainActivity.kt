@@ -11,12 +11,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         btn1.setOnClickListener {
+            ZToast.setColorI("#FFC107")
             ZToast.showI(this,"showI")
         }
         btn2.setOnClickListener {
+            ZToast.setColorS("#FFC107")
             ZToast.showS(this,"showS")
         }
         btn3.setOnClickListener {
+            ZToast.setColorE("#FFC107")
             ZToast.showE(this,"showE")
         }
     }

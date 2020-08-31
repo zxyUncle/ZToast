@@ -483,13 +483,13 @@ public final class TSnackbar {
      */
     public TSnackbar setPromptThemBackground(Prompt prompt) {
         if (prompt == Prompt.SUCCESS) {
-            setBackgroundColor(mContext.getResources().getColor(Prompt.SUCCESS.getBackgroundColor()));
+            setBackgroundColor(ZToast.Companion.getColorS());
             addIcon(Prompt.SUCCESS.getResIcon(), 0, 0);
         } else if (prompt == Prompt.ERROR) {
-            setBackgroundColor(mContext.getResources().getColor(Prompt.ERROR.getBackgroundColor()));
+            setBackgroundColor(ZToast.Companion.getColorE());
             addIcon(Prompt.ERROR.getResIcon(), 0, 0);
         } else if (prompt == Prompt.WARNING) {
-            setBackgroundColor(mContext.getResources().getColor(Prompt.WARNING.getBackgroundColor()));
+            setBackgroundColor(ZToast.Companion.getColorI());
             addIcon(Prompt.WARNING.getResIcon(), 0, 0);
         }
         return this;
